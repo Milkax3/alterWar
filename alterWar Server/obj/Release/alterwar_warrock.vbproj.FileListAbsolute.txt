@@ -1,0 +1,11 @@
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\bin\Release\alterwar.exe.config
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\bin\Release\alterwar.exe
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\bin\Release\alterwar.pdb
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\bin\Release\alterwar.xml
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\bin\Release\MySql.Data.dll
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\obj\Release\ResolveAssemblyReference.cache
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\obj\Release\alterwar.warrock.Resources.resources
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\obj\Release\alterwar_warrock.vbproj.GenerateResource.Cache
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\obj\Release\alterwar.exe
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\obj\Release\alterwar.xml
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\obj\Release\alterwar.pdb

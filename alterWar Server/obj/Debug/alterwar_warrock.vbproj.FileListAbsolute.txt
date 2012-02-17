@@ -1,0 +1,34 @@
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\obj\Debug\ResolveAssemblyReference.cache
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\obj\Debug\alterwar.warrock.Resources.resources
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\obj\Debug\alterwar_warrock.vbproj.GenerateResource.Cache
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\bin\Debug\alterwar.exe
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\bin\Debug\alterwar.pdb
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\bin\Debug\alterwar.xml
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\obj\Debug\alterwar.exe
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\obj\Debug\alterwar.xml
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\obj\Debug\alterwar.pdb
+C:\Users\Leon\Music\alterwar\warcoders_Login\obj\Debug\alterwar.xml
+C:\Users\Leon\Music\alterwar\warcoders_Login\obj\Debug\alterwar.pdb
+C:\Users\Leon\Music\alterwar\warcoders_Login\bin\Debug\alterwar.exe
+C:\Users\Leon\Music\alterwar\warcoders_Login\bin\Debug\alterwar.pdb
+C:\Users\Leon\Music\alterwar\warcoders_Login\bin\Debug\alterwar.xml
+C:\Users\Leon\Music\alterwar\warcoders_Login\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Leon\Music\alterwar\warcoders_Login\obj\Debug\alterwar.warrock.Resources.resources
+C:\Users\Leon\Music\alterwar\warcoders_Login\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Leon\Music\alterwar\warcoders_Login\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Leon\Music\alterwar\warcoders_Login\obj\Debug\alterwar.exe
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\bin\Debug\alterwar.exe.config
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warcoders_Login\bin\Debug\MySql.Data.dll
+C:\Users\Administrator\Desktop\alterwar\warcoders_Login\bin\Debug\alterwar.exe.config
+C:\Users\Administrator\Desktop\alterwar\warcoders_Login\obj\Debug\alterwar.exe
+C:\Users\Administrator\Desktop\alterwar\warcoders_Login\obj\Debug\alterwar.xml
+C:\Users\Administrator\Desktop\alterwar\warcoders_Login\obj\Debug\alterwar.pdb
+C:\Users\Administrator\Desktop\alterwar\warcoders_Login\bin\Debug\alterwar.exe
+C:\Users\Administrator\Desktop\alterwar\warcoders_Login\bin\Debug\alterwar.pdb
+C:\Users\Administrator\Desktop\alterwar\warcoders_Login\bin\Debug\alterwar.xml
+C:\Users\Administrator\Desktop\alterwar\warcoders_Login\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\alterwar\warcoders_Login\obj\Debug\alterwar.warrock.Resources.resources
+C:\Users\Administrator\Desktop\alterwar\warcoders_Login\obj\Debug\alterwar_warrock.vbproj.GenerateResource.Cache
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\alter\bin\Debug\alterwar.exe.config
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\alter\obj\Debug\alterwar.xml
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\alter\obj\Debug\alterwar.pdb

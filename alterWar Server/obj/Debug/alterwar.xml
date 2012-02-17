@@ -1,0 +1,52 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+alterwar
+</name>
+</assembly>
+<members>
+<member name="M:alterwar.warrock.Extensions.ToHexArray(System.Byte[])">
+	<summary>
+ Get the HexCode-Array of the Byte Array
+ </summary>
+	<param name="i">The Byte Array</param>
+	<returns>A HexCode-Array</returns>
+	<remarks></remarks>
+</member><member name="M:alterwar.warrock.Extensions.ReverseIP(System.String)">
+	<summary>
+ Reverses an IP Address (eg. 127.0.0.1 to 1.0.0.127)
+ </summary>
+	<param name="tString">The IP Address as String</param>
+	<returns>The reversed IP</returns>
+	<remarks></remarks>
+</member><member name="M:alterwar.warrock.Extensions.GetAddressInt(System.Net.IPAddress)">
+	<summary>
+ Converts the IPAddress to a Long (Ready for the Peer2Peer Connection)
+ </summary>
+	<param name="addr">The Source IP Address</param>
+	<returns>The Long from the IP Address</returns>
+	<remarks></remarks>
+</member><member name="M:alterwar.warrock.Extensions.ToIP(System.Int64)">
+	<summary>
+ Converts the Long to the IP Address
+ </summary>
+	<param name="address">The IP Address (from Peer2Peer)</param>
+	<returns>The IP Address from the Long</returns>
+	<remarks></remarks>
+</member><member name="P:alterwar.warrock.My.Resources.Resources.ResourceManager">
+	<summary>
+  Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+</summary>
+</member><member name="P:alterwar.warrock.My.Resources.Resources.Culture">
+	<summary>
+  Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+  Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
+</summary>
+</member><member name="T:alterwar.warrock.My.Resources.Resources">
+	<summary>
+  Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,20 @@
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Lokale Einstellungen\Anwendungsdaten\Temporary Projects\alterWar Premium Handler\obj\Debug\ResolveAssemblyReference.cache
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Lokale Einstellungen\Anwendungsdaten\Temporary Projects\alterWar Premium Handler\obj\Debug\alterWar_Premium_Handler.Resources.resources
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Lokale Einstellungen\Anwendungsdaten\Temporary Projects\alterWar Premium Handler\obj\Debug\alterWar Premium Handler.vbproj.GenerateResource.Cache
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Lokale Einstellungen\Anwendungsdaten\Temporary Projects\alterWar Premium Handler\bin\Debug\alterWar Premium Handler.exe
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Lokale Einstellungen\Anwendungsdaten\Temporary Projects\alterWar Premium Handler\bin\Debug\alterWar Premium Handler.pdb
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Lokale Einstellungen\Anwendungsdaten\Temporary Projects\alterWar Premium Handler\bin\Debug\alterWar Premium Handler.xml
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Lokale Einstellungen\Anwendungsdaten\Temporary Projects\alterWar Premium Handler\bin\Debug\MySql.Data.dll
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Lokale Einstellungen\Anwendungsdaten\Temporary Projects\alterWar Premium Handler\obj\Debug\alterWar Premium Handler.exe
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Lokale Einstellungen\Anwendungsdaten\Temporary Projects\alterWar Premium Handler\obj\Debug\alterWar Premium Handler.xml
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Lokale Einstellungen\Anwendungsdaten\Temporary Projects\alterWar Premium Handler\obj\Debug\alterWar Premium Handler.pdb
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Eigene Dateien\Visual Studio 2008\Projects\alterWar Premium Handler\alterWar Premium Handler\obj\Debug\alterWar Premium Handler.exe
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Eigene Dateien\Visual Studio 2008\Projects\alterWar Premium Handler\alterWar Premium Handler\obj\Debug\alterWar Premium Handler.xml
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Eigene Dateien\Visual Studio 2008\Projects\alterWar Premium Handler\alterWar Premium Handler\obj\Debug\alterWar Premium Handler.pdb
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Eigene Dateien\Visual Studio 2008\Projects\alterWar Premium Handler\alterWar Premium Handler\bin\Debug\alterWar Premium Handler.exe
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Eigene Dateien\Visual Studio 2008\Projects\alterWar Premium Handler\alterWar Premium Handler\bin\Debug\alterWar Premium Handler.pdb
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Eigene Dateien\Visual Studio 2008\Projects\alterWar Premium Handler\alterWar Premium Handler\bin\Debug\alterWar Premium Handler.xml
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Eigene Dateien\Visual Studio 2008\Projects\alterWar Premium Handler\alterWar Premium Handler\bin\Debug\MySql.Data.dll
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Eigene Dateien\Visual Studio 2008\Projects\alterWar Premium Handler\alterWar Premium Handler\obj\Debug\ResolveAssemblyReference.cache
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Eigene Dateien\Visual Studio 2008\Projects\alterWar Premium Handler\alterWar Premium Handler\obj\Debug\alterWar_Premium_Handler.Resources.resources
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Eigene Dateien\Visual Studio 2008\Projects\alterWar Premium Handler\alterWar Premium Handler\obj\Debug\alterWar Premium Handler.vbproj.GenerateResource.Cache

@@ -1,0 +1,21 @@
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Lokale Einstellungen\Anwendungsdaten\Temporary Projects\clientEMU\obj\Debug\ResolveAssemblyReference.cache
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Lokale Einstellungen\Anwendungsdaten\Temporary Projects\clientEMU\obj\Debug\clientEMU.Resources.resources
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Lokale Einstellungen\Anwendungsdaten\Temporary Projects\clientEMU\obj\Debug\clientEMU.vbproj.GenerateResource.Cache
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Lokale Einstellungen\Anwendungsdaten\Temporary Projects\clientEMU\bin\Debug\clientEMU.exe
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Lokale Einstellungen\Anwendungsdaten\Temporary Projects\clientEMU\bin\Debug\clientEMU.pdb
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Lokale Einstellungen\Anwendungsdaten\Temporary Projects\clientEMU\bin\Debug\clientEMU.xml
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Lokale Einstellungen\Anwendungsdaten\Temporary Projects\clientEMU\obj\Debug\clientEMU.exe
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Lokale Einstellungen\Anwendungsdaten\Temporary Projects\clientEMU\obj\Debug\clientEMU.xml
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Lokale Einstellungen\Anwendungsdaten\Temporary Projects\clientEMU\obj\Debug\clientEMU.pdb
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Eigene Dateien\Visual Studio 2008\Projects\clientEMU\clientEMU\obj\Debug\clientEMU.exe
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Eigene Dateien\Visual Studio 2008\Projects\clientEMU\clientEMU\obj\Debug\clientEMU.xml
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Eigene Dateien\Visual Studio 2008\Projects\clientEMU\clientEMU\obj\Debug\clientEMU.pdb
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Eigene Dateien\Visual Studio 2008\Projects\clientEMU\clientEMU\bin\Debug\clientEMU.exe
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Eigene Dateien\Visual Studio 2008\Projects\clientEMU\clientEMU\bin\Debug\clientEMU.pdb
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Eigene Dateien\Visual Studio 2008\Projects\clientEMU\clientEMU\bin\Debug\clientEMU.xml
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Eigene Dateien\Visual Studio 2008\Projects\clientEMU\clientEMU\obj\Debug\ResolveAssemblyReference.cache
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Eigene Dateien\Visual Studio 2008\Projects\clientEMU\clientEMU\obj\Debug\clientEMU.Resources.resources
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Eigene Dateien\Visual Studio 2008\Projects\clientEMU\clientEMU\obj\Debug\clientEMU.vbproj.GenerateResource.Cache
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\clientEMU\clientEMU\obj\Debug\clientEMU.exe
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\clientEMU\clientEMU\obj\Debug\clientEMU.xml
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\clientEMU\clientEMU\obj\Debug\clientEMU.pdb
