@@ -1,12 +1,33 @@
 Copyright (c) Supreme aka Milka / BeefyX
+
+
 @Gamersfirst, Greez from hell yeah.
 
 WarRock got trolld.
 First release of all my tools and Servers.
 
-Warning:
+=== clientEMU Warning ===
 clientEMU is not ready to use. Errorcode 73030 at Characterinfo packet means
 "Login normally, please".
 
 
-Have fun homies.
+=== The encryption changed, what now=? ===
+I will add it here everytime (actually everything is up to date and located in the source code).
+
+=== Is there any wiki? ===
+Yes. Visit www.alterwar.de/wiki and expand it by your own.
+I wrote the common Entries like Packet and Encryption.
+
+=== Lmfao thats vb.net ===
+Yes. Greez from hell :D
+
+
+
+alterWar: www.alterwar.de/
+alterWiki: www.alterwar.de/wiki
+alterForum: forum.alterwar.de/
+
+
+
+
+Peace homies!
