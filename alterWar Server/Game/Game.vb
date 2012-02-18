@@ -183,14 +183,15 @@ Namespace alterWar.GameServer
             While True
                 For i As Integer = 0 To (Rooms.Count - 1)
                     Try
+                        If i > Rooms.Count Then Continue For
                         If Rooms(i).RoomTick.Second = Date.Now.Second Then Continue For
-                        For Each P As PlayerClientGame In Rooms(i).ActivePlayers
-                            P.Send(New gSvSpawnCount(Rooms(i)))
-                            Rooms(i).RoomTick = New RoomClass.sRoomTick() With { _
+                        Rooms(i).RoomTick = New RoomClass.sRoomTick() With { _
                                 .Second = Date.Now.Second, _
                                 .TimeMinus = Rooms(i).RoomTick.TimeMinus - 1000, _
                                 .TimePlus = Rooms(i).RoomTick.TimePlus + 1000}
 
+                        For Each P As PlayerClientGame In Rooms(i).ActivePlayers
+                            P.Send(New gSvSpawnCount(Rooms(i)))
                             If Rooms(i).RoomMode = RoomClass.eRoomMode.Explosive Then
                                 RoomTick_Explosive(Rooms(i))
                             ElseIf Rooms(i).RoomMode = RoomClass.eRoomMode.Deathmatch Then

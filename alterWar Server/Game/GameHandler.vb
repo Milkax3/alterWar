@@ -18,14 +18,14 @@ Public Class GameHandler
     Private _Second As Integer
 
     Public Sub HandlePacket(ByVal D As Byte(), ByVal Client As PlayerClientGame)
-        'Try
-        Dim Packet As PacketBase = Nothing
-        Packet = GetCrypter().UnCrypt(GetCrypter().BytesToString(D), False)
-        HandlePacketSub(Packet, Client)
-        'Catch ex As Exception
-        '    Log(LogStyle.Error, "(GameServer) Client packet went wrong -> Disconnecting it")
-        '    Client.Connection.Disconnect(True)
-        'End Try
+        Try
+            Dim Packet As PacketBase = Nothing
+            Packet = GetCrypter().UnCrypt(GetCrypter().BytesToString(D), False)
+            HandlePacketSub(Packet, Client)
+        Catch ex As Exception
+            Log(LogStyle.Error, "(GameServer) Client packet went wrong -> Disconnecting it")
+            Client.Connection.Disconnect(True)
+        End Try
     End Sub
 
     Private Sub HandlePacket_Welcome(ByVal P As PacketBase, ByVal Client As PlayerClientGame)
@@ -50,13 +50,13 @@ Public Class GameHandler
         If Client.ChannelID = PlayerClientGame.eChannelID.CQC Then ChannelName = "Close Quarters Combats"
         If Client.ChannelID = PlayerClientGame.eChannelID.UrbanOps Then ChannelName = "Urban Ops"
         If Client.ChannelID = PlayerClientGame.eChannelID.BattleGroup Then ChannelName = "Battle Group"
-        Client.Send(New gSvChat(Client, "System", "You changed the channel to " & ChannelName))
+        Client.Chat(Message:="You switched to " & ChannelName)
     End Sub
     Private Sub HandlePacket_RoomList(ByVal P As PacketBase, ByVal Client As PlayerClientGame)
         Dim Page As Integer = CInt(P.GetBlock())
         Client.RoomPage = Page
         Client.Send(New gSvRoomList(Client))
-        Client.Send(New gSvChat(Client, "System", "You switched to page " & Page & "."))
+        Client.Chat(Message:="You switched to " & Page)
     End Sub
     Private Sub HandlePacket_Chat(ByVal P As PacketBase, ByVal Client As PlayerClientGame)
         Dim Type As Integer = P.GetBlock()
@@ -90,8 +90,10 @@ Public Class GameHandler
             For Each Pl As PlayerClientGame In Globals.GetGameServer().PlayersInChannel(Client.ChannelID)
                 If Pl.Room Is Nothing Then Pl.Send(New gSvChat(Client, Type, Message, 1000, Client.Nickname))
             Next
+        ElseIf Type = gSvChat.ChatType.Whisper Then
+            Client.Chat(Message:="Whispering is not implemented yet")
         Else
-            Client.Send(New gSvChat(Client, "System", "No such Message Type"))
+            Client.Chat(Message:="No such Message Type [" & Type & "]")
         End If
     End Sub
     Private Sub HandlePacket_Buy(ByVal P As PacketBase, ByVal Client As PlayerClientGame)
@@ -246,7 +248,7 @@ Public Class GameHandler
         Dim RoomPW As String = P.GetBlock()
         If Globals.GetGameServer().Rooms(RoomID) Is Nothing Then
             Client.Send(New gSvJoinRoom(gSvJoinRoom.eErrorCode.CantJoin))
-            Client.Send(New gSvChat(Client, "System", "Can't join room ( No ID )"))
+            Client.Chat(Message:="Can't join Room ( No ID )")
         End If
         If Globals.GetGameServer().Rooms(RoomID).Passworded = True Then
             If Globals.GetGameServer().Rooms(RoomID).Password = RoomPW Then
@@ -270,7 +272,7 @@ Public Class GameHandler
                     Next
                 Else
                     Client.Send(New gSvJoinRoom(gSvJoinRoom.eErrorCode.CantJoin))
-                    Client.Send(New gSvChat(Client, "System", "Can't join room ( Room full )"))
+                    Client.Chat(Message:="Can't join room ( Room full )")
                 End If
             Else
                 Client.Send(New gSvJoinRoom(gSvJoinRoom.eErrorCode.WrongPassword))
@@ -296,7 +298,7 @@ Public Class GameHandler
                 Next
             Else
                 Client.Send(New gSvJoinRoom(gSvJoinRoom.eErrorCode.CantJoin))
-                Client.Send(New gSvChat(Client, "System", "Can't join room ( Room full )"))
+                Client.Chat(Message:="Can't join room ( Room full )")
             End If
         End If
     End Sub
@@ -365,7 +367,7 @@ Public Class GameHandler
                 Exit Select
 
             Case 62 'Autostart
-                Log(LogStyle.GameServer, "Autostart switch: " & String.Join(" ", P.Blocks.ToArray()))
+                Client.Chat(Message:="Autostart is not implemeted yet.")
 
                 Exit Select
 
@@ -397,7 +399,7 @@ Public Class GameHandler
                 Exit Select
 
             Case Else 'Other subtype
-                Log(LogStyle.GameServer, "30000 : " & tType & " :: " & String.Join(" ", P.Blocks.ToArray()))
+                Log(LogStyle.GameServer, "New RoomData Subtype [" & tType & "]: " & String.Join(" ", P.Blocks.ToArray()))
 
                 Exit Select
         End Select
@@ -412,17 +414,18 @@ Public Class GameHandler
             'If NewHP <= 0 Then Client.Player.Suicide()
             If NewHP <= 0 Then NewHP += 700
             ArrSorted = New String() {P.GetBlockIndex(0), P.GetBlockIndex(1), P.GetBlockIndex(2), P.GetBlockIndex(4), P.GetBlockIndex(5), P.GetBlockIndex(6), P.GetBlockIndex(7), P.GetBlockIndex(8), P.GetBlockIndex(9), P.GetBlockIndex(10), Damage, NewHP, P.GetBlockIndex(12)}
-            Client.Send(New gSvRoomData(tType, ArrSorted))
-            Client.Player.SetHealth(NewHP)
+            For Each Cl As PlayerClientGame In Client.Room.ActivePlayers
+                Client.Send(New gSvRoomData(tType, ArrSorted))
+            Next
         ElseIf tType = 200 Then 'Car Join
             Dim CurrentHP As Integer = 2700
             Dim MaxHP As Integer = 2700
             ArrSorted = New String() {P.GetBlockIndex(0), P.GetBlockIndex(1), P.GetBlockIndex(2), P.GetBlockIndex(4), P.GetBlockIndex(5), P.GetBlockIndex(6), P.GetBlockIndex(7), CurrentHP, MaxHP, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "$"}
-            Log(LogStyle.Network, "Outgoing seat 200 : " & String.Join(" ", ArrSorted))
+            Log(LogStyle.Network, "Car Join [200]: " & String.Join(" ", ArrSorted), 3)
             Client.Send(New gSvRoomData(tType, ArrSorted))
         ElseIf tType = 202 Then 'Car Leave
             ArrSorted = New String() {P.GetBlockIndex(0), P.GetBlockIndex(1), P.GetBlockIndex(2), P.GetBlockIndex(4), P.GetBlockIndex(5), P.GetBlockIndex(6), P.GetBlockIndex(7), 0, 0, 0, 1, 0, 0}
-            Log(LogStyle.Network, "Outgoing seat 202 : " & String.Join(" ", ArrSorted))
+            Log(LogStyle.Network, "Car Leave [202]: " & String.Join(" ", ArrSorted), 3)
             Client.Send(New gSvRoomData(tType, ArrSorted))
         Else
             For Each cClient As PlayerClientGame In Room.ActivePlayers
@@ -435,12 +438,12 @@ Public Class GameHandler
     End Sub
     Private Sub HandlePacket_CreateRoom(ByVal P As PacketBase, ByVal Client As PlayerClientGame)
         Dim Room As New RoomClass(Client)
-        'If Client.ChannelID <> PlayerClientGame.eChannelID.CQC Then
-        '   Client.Send(New gSvChat(Client, "Actually you can only create Rooms in CQC"))
-        '   Client.Send(New gSvChat(Client, "UO and BGB had been disabled because of"))
-        '   Client.Send(New gSvChat(Client, "unfinished Data (flag, vehicle, etc)."))
-        '   Exit Sub
-        'End If
+        If Client.ChannelID <> PlayerClientGame.eChannelID.CQC Then
+            Client.Chat(Message:="Actually you can only create Rooms in CQC")
+            Client.Chat(Message:="UO and BGB had been disabled because of")
+            Client.Chat(Message:="unfinished Data (flag, vehicle, etc).")
+            Exit Sub
+        End If
         Dim RoomID As Integer = Globals.GetGameServer().Rooms.Count()
         Dim RoomName As String = P.GetBlock()
         Dim Passworded As String = P.GetBlock()
@@ -504,11 +507,16 @@ Public Class GameHandler
         Next
     End Sub
     Private Sub HandlePacket_LuckyShotOpen(ByVal P As PacketBase, ByVal Client As PlayerClientGame)
+        'TODO:
+        '   Let this run trough a Database, not hardcoding :D
         Client.Send(New gSvLuckyShotLoad(New alterWar.Classes.LuckyShotItem() {New alterWar.Classes.LuckyShotItem(True, "DC64", 100, 1000), New alterWar.Classes.LuckyShotItem(False, "DF36", 10, 100)}))
     End Sub
     Private Sub HandlePacket_ItemShop(ByVal P As PacketBase, ByVal Client As PlayerClientGame)
         Dim SubType As Int16 = P.GetBlock()
         If SubType = 1110 Then 'bought a g1 weapon, handling it now. :)
+            'TODO:
+            '   Handle a payment of a g1 weapon!!!
+            '   Actually it just says "Not enough money"
             Client.Send(New gSvBuyWeaponG1(alterWar.Classes.InventoryClass.eErrorCodes.LowMoney))
         ElseIf SubType = 1113 Then 'Opened Itemshop, sending the g1 credits amount
             Client.Send(New gSvCredits(Client))

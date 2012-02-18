@@ -341,8 +341,8 @@ Public Class PlayerClientGame
         End Get
     End Property
 
-    Public Sub Chat(ByVal Message As String, ByVal Type As gSvChat.ChatType)
-        
+    Public Sub Chat(Optional ByVal From As String = "System", Optional ByVal Message As String = "Not defined Message")
+        Send(New gSvChat(Me, From, Message))
     End Sub
     Public Sub Send(ByVal P As PacketBase)
         Try

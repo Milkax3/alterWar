@@ -252,13 +252,12 @@ Public Class gSvChat
         MyBase.New(GOperationCodes.SvChat)
 
         AddBlock(1)
-        AddBlock(Client.SessionID)
-        AddBlock("James" & Convert.ToChar(&H1D) & "[SYSTEM]")
-        AddBlock(ChatType.Lobby_ToAll)
-        AddBlock(Client.SessionID)
-        AddBlock(Client.Nickname)
-        AddBlock("James" & Convert.ToChar(&H1D) & "[SYSTEM]" & Convert.ToChar(&H1D) & Convert.ToChar(&H1D) & Convert.ToChar(&H1D) & Convert.ToChar(&H1D) & ">>" & Convert.ToChar(&H1D) & Convert.ToChar(&H1D) & Message.Replace(" ", Convert.ToChar(&H1D)))
-        Log(LogStyle.Info, "Outgoing chat " & Me.GetPacket())
+        AddBlock(-1)
+        AddBlock(Name.Replace(" ", Chr(&H1D)))
+        AddBlock(ChatType.Room_ToAll)
+        AddBlock(999)
+        AddBlock("NULL")
+        AddBlock(Name.Replace(" ", Chr(&H1D)) & Chr(&H1D) & Chr(&H1D) & Chr(&H1D) & Chr(&H1D) & ">>" & Chr(&H1D) & Chr(&H1D) & Message.Replace(" ", Chr(&H1D)))
     End Sub
 
     Sub New(ByVal Client As PlayerClientGame, ByVal Type As ChatType, ByVal Message As String, ByVal TargetID As Long, ByVal TargetName As String)
@@ -271,7 +270,6 @@ Public Class gSvChat
         AddBlock(TargetID)
         AddBlock(TargetName)
         AddBlock(Message)
-        Log(LogStyle.Info, "Outgoing chat " & Me.GetPacket())
     End Sub
 End Class
 
@@ -500,9 +498,6 @@ Public Class gSvPlayerInRoom
             AddBlock(P.Network.Port)
             AddBlock(0)
         Next
-
-        Log(LogStyle.Network, "C) PACKET PACKET PACKET")
-        Log(LogStyle.Info, MyBase.GetPacket())
     End Sub
 End Class
 

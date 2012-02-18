@@ -32,3 +32,6 @@ C:\Users\Administrator\Desktop\alterwar\warcoders_Login\obj\Debug\alterwar_warro
 C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\alter\bin\Debug\alterwar.exe.config
 C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\alter\obj\Debug\alterwar.xml
 C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\alter\obj\Debug\alterwar.pdb
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\alterWar Server\bin\Debug\alterwar.exe.config
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\alterWar Server\obj\Debug\alterwar.xml
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\alterWar Server\obj\Debug\alterwar.pdb
