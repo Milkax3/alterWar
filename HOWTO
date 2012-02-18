@@ -1,0 +1,51 @@
+=== How to run the Server (and play on it) ===
+
+Thats just easier than you may thought.
+Configure the Server.ini in the \Data\ Folder where
+the executables is located at.
+
+Then go to C:\Windows\system32\drivers\etc\ and open
+the file "hosts" with an normal text editor (eg. Notepad++).
+
+Add an line with
+127.0.0.1 login.warrock.net
+
+To explain: 127.0.0.1 is the IP you put as GAME server IP.
+When you change the IP to 0.0.0.0, nobody can connect
+to your server.
+
+And login.warrock.net is the normal login Server, you use to login
+with your original account.
+
+Then just save it (if it won't work, save as .txt on desktop, remove the .txt
+and move it to the C:\Windows\system32\drivers\etc\ Folder).
+
+Alright, now when you start WarRock, warrock will try to connect to
+127.0.0.1 instead of login.warrock.net.
+
+Its like... An "image" explains more than 1000 words:
+
+Game -> DNS Lookup (login.warrock.net) -> 8.8.8.8 (let's say 8.8.8.8 is login.warrock.net)
+DNS Lookup -> C:\Windows\system32\drivers\etc\hosts -> Search for login.warrock.net
+login.warrock.net found as 127.0.0.1! We don't need to look anymore.
+Game -> 127.0.0.1
+
+And if you DON'T do this, it will work like this:
+
+Game -> 8.8.8.8
+
+
+
+=== Play normally again ===
+
+Just add a # at the beginning of the line to comment the line out.
+This means, the DNS Lookup won't check that line.
+
+(Save)
+
+
+
+
+
+Greeez from Hell!
+Supreme :)
