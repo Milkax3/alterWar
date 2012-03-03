@@ -438,12 +438,12 @@ Public Class GameHandler
     End Sub
     Private Sub HandlePacket_CreateRoom(ByVal P As PacketBase, ByVal Client As PlayerClientGame)
         Dim Room As New RoomClass(Client)
-        If Client.ChannelID <> PlayerClientGame.eChannelID.CQC Then
-            Client.Chat(Message:="Actually you can only create Rooms in CQC")
-            Client.Chat(Message:="UO and BGB had been disabled because of")
-            Client.Chat(Message:="unfinished Data (flag, vehicle, etc).")
-            Exit Sub
-        End If
+        'If Client.ChannelID <> PlayerClientGame.eChannelID.CQC Then
+        '   Client.Chat(Message:="Actually you can only create Rooms in CQC")
+        '   Client.Chat(Message:="UO and BGB had been disabled because of")
+        '   Client.Chat(Message:="unfinished Data (flag, vehicle, etc).")
+        '   Exit Sub
+        'End If
         Dim RoomID As Integer = Globals.GetGameServer().Rooms.Count()
         Dim RoomName As String = P.GetBlock()
         Dim Passworded As String = P.GetBlock()

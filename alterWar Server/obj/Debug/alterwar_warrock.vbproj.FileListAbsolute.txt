@@ -35,3 +35,11 @@ C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\alte
 C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\alterWar Server\bin\Debug\alterwar.exe.config
 C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\alterWar Server\obj\Debug\alterwar.xml
 C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\alterWar Server\obj\Debug\alterwar.pdb
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\alterWar Server\bin\Debug\alterwar.exe
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\alterWar Server\bin\Debug\alterwar.pdb
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\alterWar Server\bin\Debug\alterwar.xml
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\alterWar Server\bin\Debug\MySql.Data.dll
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\alterWar Server\obj\Debug\ResolveAssemblyReference.cache
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\alterWar Server\obj\Debug\alterwar.warrock.Resources.resources
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\alterWar Server\obj\Debug\alterwar_warrock.vbproj.GenerateResource.Cache
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\alterWar Server\obj\Debug\alterwar.exe
