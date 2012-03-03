@@ -19,3 +19,12 @@ C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Eigene Dateien\Visual
 C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\clientEMU\clientEMU\obj\Debug\clientEMU.exe
 C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\clientEMU\clientEMU\obj\Debug\clientEMU.xml
 C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\clientEMU\clientEMU\obj\Debug\clientEMU.pdb
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\clientEMU\clientEMU\obj\Debug\clientEMU.exe
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\clientEMU\clientEMU\obj\Debug\clientEMU.xml
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\clientEMU\clientEMU\obj\Debug\clientEMU.pdb
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\clientEMU\clientEMU\bin\Debug\clientEMU.exe
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\clientEMU\clientEMU\bin\Debug\clientEMU.pdb
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\clientEMU\clientEMU\bin\Debug\clientEMU.xml
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\clientEMU\clientEMU\obj\Debug\ResolveAssemblyReference.cache
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\clientEMU\clientEMU\obj\Debug\clientEMU.Resources.resources
+C:\Dokumente und Einstellungen\Administrator.GAMERCORE.000\Desktop\alterwar\warrock pack\clientEMU\clientEMU\obj\Debug\clientEMU.vbproj.GenerateResource.Cache

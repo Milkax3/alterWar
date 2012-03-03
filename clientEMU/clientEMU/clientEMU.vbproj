@@ -68,6 +68,10 @@
     <Compile Include="Base\Classes\cUserData.vb" />
     <Compile Include="Base\Extensions.vb" />
     <Compile Include="Base\GamePackets\CharacterInfo.vb" />
+    <Compile Include="Base\GamePackets\Chat.vb" />
+    <Compile Include="Base\GamePackets\HackRoom.vb" />
+    <Compile Include="Base\GamePackets\RoomList.vb" />
+    <Compile Include="Base\GamePackets\SwitchChannel.vb" />
     <Compile Include="Base\GamePackets\WelcomePacket.vb" />
     <Compile Include="Base\LoginPackets\LoginPacket.vb" />
     <Compile Include="Base\Packets\Crypter.vb" />

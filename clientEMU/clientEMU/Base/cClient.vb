@@ -69,7 +69,7 @@ Namespace Base
                         Dim Buf As Byte() = New Byte(InputLen - 1) {}
                         Array.Copy(Input, 0, Buf, 0, InputLen)
                         Dim Pa As PacketBase = Nothing
-                        Pa = c.UnCrypt(c.BytesToString(Buf), True)
+                        Pa = c.UnCrypt(c.BytesToString(Buf), True)(0)
                         RaiseEvent ReceivedLogin(Pa)
                     Catch ex As Exception
                     End Try
@@ -83,14 +83,16 @@ Namespace Base
                 Dim c As New Crypter()
                 While _SocketGame.Connected
                     Try
-                        Dim Input As Byte() = New Byte(1023) {}
+                        Dim Input As Byte() = New Byte(8192) {}
                         Dim InputLen As Integer = 0
                         InputLen = _SocketGame.Receive(Input, 0, Input.Length, Sockets.SocketFlags.None)
                         Dim Buf As Byte() = New Byte(InputLen - 1) {}
                         Array.Copy(Input, 0, Buf, 0, InputLen)
-                        Dim Pa As PacketBase = Nothing
+                        Dim Pa As PacketBase()
                         Pa = c.UnCrypt(c.BytesToString(Buf), False)
-                        RaiseEvent ReceivedGame(Pa)
+                        For Each cP As PacketBase In Pa
+                            RaiseEvent ReceivedGame(cP)
+                        Next
                     Catch ex As Exception
                     End Try
                 End While
