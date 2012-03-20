@@ -49,7 +49,7 @@ Public Class gSvWelcome
         MyBase.New(GOperationCodes.SvWelcome)
 
         AddBlock(1)
-        AddBlock(DateTime.Now.ToString("s\/m\/H\/d\/M\/11") & "2/2/30/0")
+        AddBlock(DateTime.Now.ToString("s\/m\/H\/d\/M\/11") & "12/2/79/0")
         '1/      5    /    349    /0
         '?/Day of Week/Day of Year/?
     End Sub
@@ -63,9 +63,9 @@ Public Class gSvCharacterInfo
         'Global player data
         AddBlock(1)
         AddBlock("Gameserver1")
-        AddBlock(201)
+        AddBlock(2)
         AddBlock(Client.UserID)
-        AddBlock(165)
+        AddBlock(4)
         AddBlock(Client.Nickname)
 
         'Clan
@@ -77,12 +77,12 @@ Public Class gSvCharacterInfo
         'Special player data
         AddBlock(Client.Premium) 'Premium
         AddBlock(0) 'WTF?
-        AddBlock(0)
+        AddBlock(9)
         AddBlock(-1)
         AddBlock(0)
         AddBlock(Client.Level)
         AddBlock(Client.EXP)
-        AddBlock(416442) 'Mini idea: Minutes of played warrock
+        AddBlock(52722) 'Mini idea: Minutes of played warrock
         AddBlock(0)
         AddBlock(Client.Dinar)
         AddBlock(Client.Kills)
@@ -151,9 +151,8 @@ Public Class gSvCharacterInfo
 
         AddBlock(0)
         AddBlock(CInt(CBool(Config.GetConfig("GAME_AIENABLED")))) '1 AI Channel | 0 NO AI Channel
-        AddBlock(0)
 
-        AddBlock("you_are@a_damned.sniffer#14e6")
+        AddBlock("you_are@a_damned.sniffer#16e6")
     End Sub
 End Class
 
@@ -462,6 +461,16 @@ End Class
 
 Public Class gSvPlayerInRoom
     Inherits PacketBase
+
+    Private Function GetTruePort(ByVal input As UShort) As String
+        Dim HexCode As String = input.ToString("X")
+        Dim HexPartA As String = HexCode.Substring(0, 2)
+        Dim HexPartB As String = HexCode.Substring(2, HexCode.Length - 2)
+        Dim TrueHex As String = "&H" & HexPartB & HexPartA
+        Dim TruePort As UShort = CUShort(TrueHex)
+        Return TruePort
+    End Function
+
     Sub New(ByVal PlayerList As PlayerClientGame())
         MyBase.New(GOperationCodes.SvPlayerInRoom)
         AddBlock(PlayerList.Length)
@@ -493,11 +502,13 @@ Public Class gSvPlayerInRoom
             AddBlock(-1)
             AddBlock("ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ")
             AddBlock(P.Network.Address().GetAddressInt())
-            AddBlock(P.Network.Port)
+            AddBlock(GetTruePort(P.Network.Port))
             AddBlock(P.Network.Address().GetAddressInt()) '(LOCAL) Network
-            AddBlock(P.Network.Port)
+            AddBlock(GetTruePort(P.Network.Port))
             AddBlock(0)
         Next
+
+        Log(LogStyle.Info, MyBase.GetPacket())
     End Sub
 End Class
 

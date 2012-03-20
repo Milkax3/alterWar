@@ -119,9 +119,10 @@ Private Function timeGetTime() As Long
 
 TryAgainWaitTick:
             Dim _WaitTickTmp As String = Request("Spam", "Give in the wait time (in ms):")
-            If IsNumeric(_WaitTickTmp) AndAlso _WaitTickTmp >= 3000 Then
+            If IsNumeric(_WaitTickTmp) AndAlso _WaitTickTmp >= 5500 Then
                 _WaitTick = _WaitTickTmp
             Else
+                WriteLine("Spam", "It must be numeric (and greater or equal than 5500)")
                 GoTo TryAgainWaitTick
             End If
 

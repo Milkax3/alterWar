@@ -27,8 +27,8 @@ Public Class lSvPatch
         'Game Version: Found in version.cfg
         AddBlock(19)
         AddBlock(34)
-        AddBlock(53)
-        AddBlock(3)
+        AddBlock(54)
+        AddBlock(0)
         AddBlock(0)
         AddBlock("http://patch.warrock.net/k2network/warrock/")
     End Sub

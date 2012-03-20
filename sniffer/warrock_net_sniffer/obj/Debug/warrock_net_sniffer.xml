@@ -6,6 +6,65 @@ warrock_net_sniffer
 </name>
 </assembly>
 <members>
-
+<member name="M:warrock_net_sniffer.Module1.ReadLine">
+	<summary>
+ Reads a formatted line
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:warrock_net_sniffer.Module1.KeepAlive">
+	<summary>
+ Keeps the Console alive for the case that the Connections were closed
+ </summary>
+	<remarks></remarks>
+</member><member name="M:warrock_net_sniffer.Module1.OnReceive(System.IAsyncResult)">
+	<summary>
+ Catching every packet and check it
+ </summary>
+	<param name="ar">...</param>
+	<remarks></remarks>
+</member><member name="M:warrock_net_sniffer.Module1.HandlePacket(warrock_net_sniffer.Packet)">
+	<summary>
+ Handling an sniffed packet (eg. log it)
+ </summary>
+	<param name="p">The packet</param>
+	<remarks></remarks>
+</member><member name="M:warrock_net_sniffer.Module1.Resolve(System.String)">
+	<summary>
+ Resolves the DNS to an IP Address
+ </summary>
+	<param name="addr">Hostname (DNS)</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:warrock_net_sniffer.Module1.Log(System.String,System.String,System.ConsoleColor)">
+	<summary>
+ Loggs messages in the console
+ </summary>
+	<param name="Pre">Pre message (tagged in [])</param>
+	<param name="Message">Message</param>
+	<param name="C">Color of Log</param>
+	<remarks></remarks>
+</member><member name="M:warrock_net_sniffer.Module1.PutLog(System.String,System.String)">
+	<summary>
+ Writes log into default log file
+ </summary>
+	<param name="Pre">Pre message (tagged in [])</param>
+	<param name="Data">Message</param>
+	<remarks></remarks>
+</member><member name="M:warrock_net_sniffer.Module1.PutLogUDP(System.String,System.String)">
+	<summary>
+ Writes log into udp log file
+ </summary>
+	<param name="Pre">Pre message (tagged in [])</param>
+	<param name="Data">Message</param>
+	<remarks></remarks>
+</member><member name="M:warrock_net_sniffer.Module1.PutLogUDPOther(System.String,System.String)">
+	<summary>
+ Writes log into other udp log file
+ </summary>
+	<param name="Pre">Pre message (tagged in [])</param>
+	<param name="Data">Message</param>
+	<remarks></remarks>
+</member>
 </members>
 </doc>

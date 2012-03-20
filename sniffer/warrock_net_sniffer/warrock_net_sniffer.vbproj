@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{7C2F3C3D-E57A-45BE-B095-831EAAA2B9AC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>warrock_net_sniffer.Module1</StartupObject>
+    <StartupObject>warrock_net_sniffer.Base</StartupObject>
     <RootNamespace>warrock_net_sniffer</RootNamespace>
     <AssemblyName>warrock_net_sniffer</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -63,7 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Decrypter.vb" />
-    <Compile Include="Module1.vb" />
+    <Compile Include="Base.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
